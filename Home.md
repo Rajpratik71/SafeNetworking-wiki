@@ -20,7 +20,7 @@ Use the below, outlined pages to find what you are looking for and let us know i
 - [Contributing to SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Contributing-to-SafeNetworking)
 <br/>
 
-## Palo Alto Sensors and Applications
+## Palo Alto Sensors and Applications<a name="config-ngfw"></a>
 - [NGFW Configuration using the Web UI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-using-the-Web-UI) - for the point and click warriors among us.<br/>
 - [NGFW Configuration using the CLI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-using-the-CLI) - cuz it really shouldn't take all afternoon.
 <br/>
