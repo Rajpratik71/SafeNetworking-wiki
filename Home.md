@@ -21,8 +21,8 @@ Use the below, outlined pages to find what you are looking for and let us know i
 <br/>
 
 ## Palo Alto Sensors and Applications
-- [NGFW Configuration using the Web UI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-ui) - for the point and click warriors among us.<br/>
-- [NGFW Configuration using the CLI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-cli) - cuz it really shouldn't take all afternoon.
+- [NGFW Configuration using the Web UI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-using-the-Web-UI) - for the point and click warriors among us.<br/>
+- [NGFW Configuration using the CLI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-using-the-CLI) - cuz it really shouldn't take all afternoon.
 <br/>
 
 ## ElasticStack
