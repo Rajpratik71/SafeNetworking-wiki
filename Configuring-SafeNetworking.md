@@ -50,4 +50,4 @@ bash ./setup.sh
 ```
 <br/><br/>
 
-### Now you must [configure the NGFW](https://github.com/PaloAltoNetworks/safe-networking/wiki#config-ngfw)
+### Now you must [configure the NGFW](https://github.com/PaloAltoNetworks/safe-networking/wiki/Home#config-ngfw)
