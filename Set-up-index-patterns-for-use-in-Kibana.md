@@ -2,13 +2,23 @@
 <br/>
 
 Click on the Management tab on the left hand side and click "Index Patterns"
-![Managment](images/kibana-mgmt.png)
+<table><tr><td>
+    <img src="images/kibana-mgmt.png" />
+</td></tr></table>
 <br/><br/>
-The first index to set up is the sfn-dns-event index.  Put that name in the text box and it should match the index as in the screenshot.  Click the next step button.
+The first index to set up is the threat index.  Put threat-* in the text box and it should match any indexes already in ElasticSearch as in the screenshot.  Click the next step button.
 <br/><br/>
-![Event Index](images/sfn-dns-event-index.png)<br/>
-For the "Time filter field name" select the updated_at in the dropdown and click the create index pattern button
-##### NOTE: The screenshot shows @timestamp - be sure to select **updated_at**
-![Time Filter](images/timestamp.png)
+<table><tr><td>
+    <img src="images/threat-index.png" />
+</td></tr></table><br/>
+For the "Time filter field name" select @timestamp in the dropdown and click the create index pattern button<br/><br/>
+<table><tr><td>
+    <img src="images/timestamp.png" />
+</td></tr></table>
 <br/>
-## Follow the same procedure for the af-details, sfn-domain-details and sfn-tag-details indexes, but in the "Time filter field name" dropdown select "I don't want to use the Time Filter"
+
+## Follow the same procedure for the traffic-* index
+
+We also need to create index patters for af-details, sfn-domain-details, and sfn-tag-details.  This is the same procedure, but with the following caveats for each index:
+ - sfn-domain-details* and sfn-tag-details* indexes: in the "Time filter field name" dropdown select "doc_updated"
+ - af-details* index: in the "Time filter field name" dropdown select "I do not want to use the Time Filter" 

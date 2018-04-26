@@ -3,31 +3,40 @@
 <br/><br/>
 ### 2. Copy the SafeNetworking logstash configuration files to the logstash config directory
 ```
-sudo cp install/logstash/sfn-dns.conf /etc/logstash/conf.d/
+sudo cp install/logstash/pan-sfn.conf /etc/logstash/conf.d/
 ```
 <br/>
 
-### 3. Edit the /etc/logstash/conf.d/sfn-dns.conf file and replace the "CHANGEME" with your logstash listener and elasticsearch server where appropriate (3 places)
-Example Input and Output stanzas.  Do not delete any of the lines. The filter stanza has been omitted and only sections of the input and output stanzas are show for clarity.
+### 3. Edit the /etc/logstash/conf.d/pan-sfn.conf file and replace the "CHANGEME" with your logstash listener and elasticsearch server where appropriate (4 places)
+Example Input and Output stanzas.  Do not delete any of the lines. The filter stanza has been omitted and only sections of the input and output stanzas are shown for clarity.
 
 ```
 input {
-  http {
-    host => "10.10.10.10"
-    port => '9563'
+  syslog {
+    host => "192.168.1.140"
+    port => "5514"
+    type => "syslog"
+    tags => [ "PAN-OS_syslog" ]
 ...
 
 output {
-  if "SFN-DNS" in [tags] {
-    elasticsearch {
-      hosts => ["10.10.10.10:9200"]
-      index => ["sfn-dns-event"]
-    }
-    stdout { codec => rubydebug }
+  if "PAN-OS_traffic" in [tags] {
+        elasticsearch {
+            index => "traffic-%{+YYYY.MM.dd}"
+            hosts => ["192.168.1.140:9200"]
+        }
+        stdout { codec => rubydebug }
   }
+  else if "PAN-OS_threat" in [tags] {
+        elasticsearch {
+            index => "threat-%{+YYYY.MM.dd}"
+            hosts => ["192.168.1.140:9200"]
+        }
+        stdout { codec => rubydebug }
+} 
   else if "_grokparsefailure" in [tags] {
     elasticsearch {
-      hosts => ["10.10.10.10:9200"]
+      hosts => ["192.168.1.140:9200"]
       index => ["sfn-dns-unknown"]
     }
 ...
@@ -41,4 +50,4 @@ bash ./setup.sh
 ```
 <br/><br/>
 
-### Now you must [configure the NGFW](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration)
+### Now you must [configure the NGFW](https://github.com/PaloAltoNetworks/safe-networking/wiki#config-ngfw)

@@ -1,4 +1,4 @@
-As of version 2.0.3, SafeNetworking runs as a system service in Ubuntu.  You have the same commands for SafeNetworking as you would for any other service - i.e. systemctl and service. 
+SafeNetworking runs as a system service in Ubuntu.  You have the same commands for SafeNetworking as you would for any other service - i.e. systemctl and service. 
 
 To view if SafeNetworking is running:
 ```
