@@ -21,7 +21,8 @@ Use the below, outlined pages to find what you are looking for and let us know i
 <br/>
 
 ## Palo Alto Sensors and Applications
-- [NGFW Configuration for DNS Threat](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration)
+- [NGFW Configuration using the Web Interface](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-ui) - for the point and click warriors.
+- [NGFW Configuration using the CLI](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGFW-Configuration-cli) - cuz you just don't have all afternoon to do this. 
 <br/>
 
 ## ElasticStack
