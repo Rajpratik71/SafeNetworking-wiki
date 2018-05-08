@@ -10,7 +10,7 @@ On the Saved Objects page, click on the Import icon in the top right and navigat
 When importing, it will ask if it should overwrite or prompt.  Select overwrite:
 ![Overwrite](images/overwrite.png)
 <br/><br/><br/><br/>
-As the visualizations get imported, you will need to select the index that they are associated with.  You should make the imports the same as the following screenshot.
+As the visualizations get imported, you will need to select the index that they are associated with.  You should make the imports the same as the following screenshot.  Your visualizations may be in a different order.  Verify that the "Sample of affected objects" and "New index pattern" columns match what is in the screenshot.
 ![Indexes](images/indexes.png)
 <br/><br/><br/><br/>
 Click on the Dashboard tab on the left hand side of the screen, If everything goes as planned, you should now have multiple dashboards and reports to start viewing the data.

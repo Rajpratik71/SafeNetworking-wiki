@@ -19,10 +19,15 @@ Since we are using the very basics of tmux, v2.1 or higher should suffice:
 ```
 tmux -V
 ```
+Because root owns the process of SafeNetworking (sfn) when it runs, it also writes the log files as root.  Therefore, to run in debug mode, you must change the permissions of the sfn.log file or you will get a permissions error
+```
+chmod 777 ~/safe-networking/log/sfn.log
+```
+
 Once you have tmux installed, you can now use it to run SafeNetworking and keep it running even when you kill your session.  So, in step 12 of the README the instructions would now look like this:
 ```
 tmux new-session -s sfn
-cd safe-networking-sp
+cd safe-networking
 source env/bin/activate
 python ./sfn > log/console-$(date +%Y-%m-%d_%H:%M).log 2>&1 &
 ```
