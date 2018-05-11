@@ -17,29 +17,31 @@ input {
     port => "5514"
     type => "syslog"
     tags => [ "PAN-OS_syslog" ]
-...
+
+...[SNIP]...
 
 output {
-  if "PAN-OS_traffic" in [tags] {
+    if "PAN-OS_traffic" in [tags] {
         elasticsearch {
             index => "traffic-%{+YYYY.MM.dd}"
             hosts => ["192.168.1.140:9200"]
         }
         stdout { codec => rubydebug }
-  }
-  else if "PAN-OS_threat" in [tags] {
+    }
+    else if "PAN-OS_threat" in [tags] {
         elasticsearch {
             index => "threat-%{+YYYY.MM.dd}"
             hosts => ["192.168.1.140:9200"]
         }
         stdout { codec => rubydebug }
-} 
-  else if "_grokparsefailure" in [tags] {
-    elasticsearch {
-      hosts => ["192.168.1.140:9200"]
-      index => ["sfn-dns-unknown"]
     }
-...
+    else {
+       elasticsearch {
+           index => "parsefailure-%{+YYYY.MM.dd}"
+           hosts => ["192.168.1.140:9200"]
+       }
+} 
+
 ```
 <br/><br/>
 ### 4. Install the index mappings into ElasticSearch
