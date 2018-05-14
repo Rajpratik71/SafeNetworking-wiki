@@ -2,7 +2,7 @@
 <br/>
 
 # SOFTWARE REQUIREMENTS
-**ElasticStack 6.1.2** - minimum, 6.2 works as well. <br/>
+**ElasticStack 6.1.2** - minimum, 6.2 works as well, but the visualizations sometimes go haywire. <br/>
 **Nginx 1.10** - minimum<br/>
 **Python 3.6 or greater** - don't even *attempt* anything else<br/>
 **Ubuntu 16.04 (Desktop or Server)** - no, it won't run on 14.04<br/>
@@ -62,9 +62,9 @@ sudo apt-get update && sudo apt-get install default-jdk
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=6.2.2
-sudo apt-get update && sudo apt-get install kibana=6.2.2
-sudo apt-get update && sudo apt-get install logstash=6.2.2
+sudo apt-get update && sudo apt-get install elasticsearch=6.1.2
+sudo apt-get update && sudo apt-get install kibana=6.1.2
+sudo apt-get update && sudo apt-get install logstash=6.1.2
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
