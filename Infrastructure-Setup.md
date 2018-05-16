@@ -2,7 +2,7 @@
 <br/>
 
 # SOFTWARE REQUIREMENTS
-**ElasticStack 6.1.2** - minimum, 6.2 works as well, but the visualizations sometimes go haywire. <br/>
+**ElasticStack 6.2.4**  <br/>
 **Nginx 1.10** - minimum<br/>
 **Python 3.6 or greater** - don't even *attempt* anything else<br/>
 **Ubuntu 16.04 (Desktop or Server)** - no, it won't run on 14.04<br/>
@@ -62,9 +62,7 @@ sudo apt-get update && sudo apt-get install default-jdk
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=6.1.2
-sudo apt-get update && sudo apt-get install kibana=6.1.2
-sudo apt-get update && sudo apt-get install logstash=6.1.2
+sudo apt-get update && sudo apt-get install elasticsearch=6.2.4 kibana=6.2.4 logstash=1:6.2.4-1
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
@@ -190,7 +188,7 @@ sudo apt-get install nginx apache2-utils
 ```
 ##### Use htpasswd to create an admin user, called "sfnadmin" (or whatever you want), that can access the Kibana web interface:
 ```
-sudo htpasswd -c /etc/nginx/htpasswd.users sfnadmin
+sudo htpasswd -c /etc/nginx/htpasswd.users sfn
 ```
 ##### Enter a password at the prompt. Remember this login, as you will need it to access the Kibana web interface.
 
