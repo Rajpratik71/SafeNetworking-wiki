@@ -37,7 +37,7 @@ NOTE: Most of these should already be installed.  This ensures it.
 ```
 sudo add-apt-repository ppa:jonathonf/python-3.6
 sudo apt-get update && sudo apt-get -y install build-essential checkinstall 
-sudo apt-get -y install python-dev python-setuptools python-pip python-smbus ibncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev 
+sudo apt-get -y install python-dev python-setuptools python-pip python-smbus libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev 
 sudo apt-get -y install python3.6
 ```
 
