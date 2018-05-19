@@ -1,5 +1,5 @@
 ## This should be done after first install and any upgrades as well.  This will ***not*** overwrite any custom visualizations or dashboards.  It will only reinstall the defaults and add any new visualizations and dashboards built into the repository.
-Import the pre-defined Reports and Dashboards from the install/kibana/export.json file included in the repository
+Import the pre-defined Reports and Dashboards from the ```install/kibana/SFN3.0 Reports Export.json``` file included in the repository
 <br/><br/><br/><br/>
 Click on the Management tab on the left hand side and click "Saved Objects"
 ![Managment](images/kibana-mgmt.png)
