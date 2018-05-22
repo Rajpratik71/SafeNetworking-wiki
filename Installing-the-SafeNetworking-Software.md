@@ -3,7 +3,7 @@
 ```git clone https://www.github.com/PaloAltoNetworks/safe-networking.git```
 <br/><br/>
 ### 2. Change into repo directory
-```cd safe-networking-sp```
+```cd safe-networking```
 <br/><br/>
 ### 3. Create python 3.6 virtualenv
 ```python3.6 -m venv env```
