@@ -81,7 +81,7 @@ The new profile should look similar to the below.</br>
 To trigger log forwarding for both traffic and threat:
 
 1. Select **Policies** -> **Security** and edit the rule to use.
-2. Select *Actions* and select the Log Forwarding profile you created in [Create Syslog Server Profile](#create-profile) un **Log Setting**
+2. Select *Actions* and select the Log Forwarding profile you created in [Create Syslog Server Profile](#create-profile) under **Log Setting**
 3. For Traffic logs, select *Log at Session End* checkbox
 4. For Threat, under **Profile Setting**, set the Profile Type to Profiles, and then select the security profiles previously created for [Vulnerability Protection](#vuln-protection), [Anti-Spyware](#anti-spyware), [URL Filtering](#url-filtering).
 5. Click OK to save the rule
