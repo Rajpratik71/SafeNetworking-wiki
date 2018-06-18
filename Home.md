@@ -16,6 +16,7 @@ Use the below, outlined pages to find what you are looking for and let us know i
 - [Creating a Snapshot](https://github.com/PaloAltoNetworks/safe-networking/wiki/Creating-a-Snapshot)
 - [Restoring a Snapshot](https://github.com/PaloAltoNetworks/safe-networking/wiki/Restoring-a-Snapshot)
 - [Changing the AutoFocus API Key](https://github.com/PaloAltoNetworks/safe-networking/wiki/Changing-the-Autofocus-API-Key)
+- [Search examples for SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/SafeNetworking-Search-Examples)
 #### &nbsp;&nbsp;Community
 - [Support Policy](https://github.com/PaloAltoNetworks/safe-networking/wiki/Support-Policy)
 - [Contributing to SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Contributing-to-SafeNetworking)
