@@ -182,4 +182,4 @@ sudo /bin/systemctl start logstash.service
 
 #### You are now done with the infrastructure setup*.  The rest of the SafeNetworking setup depends on cloning this repository.  Head back, from whence you came, and read the rest of the [README](https://github.com/PaloAltoNetworks/safe-networking) to finish the install.  
 
-* If you need access to SafeNetworking on port 80, see NGINX SETUP(https://github.com/PaloAltoNetworks/safe-networking/wiki/NGINX-Setup) to allow for external connections to SafeNetworking.
+\*If you need access to SafeNetworking on port 80, see NGINX SETUP(https://github.com/PaloAltoNetworks/safe-networking/wiki/NGINX-Setup) to allow for external connections to SafeNetworking.
