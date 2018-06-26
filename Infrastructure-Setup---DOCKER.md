@@ -143,3 +143,5 @@ telnet localhost 5514
 ```
 NOTE: To get out of the telnet session above, Ctrl + ] and type exit at the prompt - in case that wasn't clear.
 
+### OPTIONAL NGINX SETUP
+Using the default setup, Kibana only listens on port 5601 (localhost).  To allow for external connections on port 80, follow the [SFN NGINX SETUP GUIDE](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGINX-Setup) that also provides a username/password setup to access the system. 
