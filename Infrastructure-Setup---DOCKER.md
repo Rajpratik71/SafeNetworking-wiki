@@ -76,6 +76,19 @@ sudo systemctl status docker
 # 
 <br/>
 
+### DOCKER COMPOSE
+***
+Install Docker Compose from the Docker's GitHub repository
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+Set the permissions
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+# 
+<br/>
+
 ### PYTHON 3.6
 ***
 SafeNetworking requires Python 3.6 to run properly. 
