@@ -1,4 +1,4 @@
-#### Use the following instructions to use the docker-compose infrastructure for SafeNetworking
+#### Use the following instructions to use the docker based infrastructure for SafeNetworking
 <br/>
 
 # SOFTWARE REQUIREMENTS
