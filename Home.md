@@ -6,7 +6,10 @@ Use the below, outlined pages to find what you are looking for and let us know i
 [What is SafeNetworking?](https://github.com/PaloAltoNetworks/safe-networking/wiki/What-is-SafeNetworking%3F)
 
 ## &nbsp;&nbsp;Installation, configuration and execution
-- [Infrastructure Setup](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup)<br/>
+- Infrastructure Setup:&nbsp;&nbsp;
+      [Local](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup)
+        &nbsp;&nbsp; *- or -*  &nbsp;&nbsp;
+      [Containers](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup---DOCKER)<br/>
 - [Understanding the .panrc configuration file](https://github.com/PaloAltoNetworks/safe-networking/wiki/Default-.panrc-configuration-file)<br/>
 - [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking)<br/>
 - [Running SafeNetworking in DEBUG mode](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-in-DEBUG-mode)<br/>
