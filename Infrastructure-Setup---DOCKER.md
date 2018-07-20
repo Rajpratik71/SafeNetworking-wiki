@@ -34,7 +34,10 @@ Create the docker repository listing for apt-get
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
-
+Refresh the repository listing for apt-get
+```
+sudo apt-get update
+```
 Make sure you are going to install from the Docker CE repo and not the default Ubuntu 
 ```
 apt-cache policy docker-ce
