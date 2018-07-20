@@ -16,9 +16,9 @@ NOTE: Currently, only the underlying ELK stack is setup using containers. In the
 ***
 Install supporting tools and pkgs for Ubuntu
 ```
-sudo apt-get update && sudo apt-get install software-properties-common python-software-properties
+sudo apt-get update && sudo apt-get -y install software-properties-common python-software-properties
 sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get install apt-transport-https sysv-rc-conf curl git
+sudo apt-get -y install apt-transport-https sysv-rc-conf curl git
 ```
 # 
 <br/>
