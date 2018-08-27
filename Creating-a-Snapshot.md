@@ -18,7 +18,7 @@ Perform backup of SFN-DNS indices (this could timeout - no biggie). Change the d
 ```
 PUT /_snapshot/sfn/09feb18?wait_for_completion=true
 {
-  "indices": "sfn-*,af-details",
+  "indices": "sfn-*,threat-*,traffic-*,af-details",
   "ignore_unavailable": true,
   "include_global_state": false
 }
