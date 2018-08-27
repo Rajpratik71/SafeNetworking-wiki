@@ -14,7 +14,7 @@ Snapshots are pushed (PUT) using the following format:
 ```snapshot name``` is anything you want it to be, but it must be all lowercase, alpha-numeric and you can use the underscore "_", everything else will blow up and throw an error.<br/>
 ```options``` are, well, optional.  See [this page](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-snapshots.html) for more information on snapshot and restore options<br/>
 
-Perform backup of SFN-DNS indices (this could timeout - no biggie). Change the date to the current date, or provide a naming convention that works for you:
+Perform backup of SFN indices (this could timeout - no biggie). Change the date to the current date, or provide a naming convention that works for you:
 ```
 PUT /_snapshot/sfn/09feb18?wait_for_completion=true
 {
