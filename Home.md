@@ -8,8 +8,7 @@ Use the below, outlined pages to find what you are looking for and let us know i
 ## &nbsp;&nbsp;Installation, configuration and execution
 - Infrastructure Setup:&nbsp;&nbsp;
       [Local](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup---LOCAL)
-        &nbsp;&nbsp; *- or -*  &nbsp;&nbsp;
-      [Containers](https://github.com/PaloAltoNetworks/safe-networking/wiki/Infrastructure-Setup---DOCKER)<br/>
+      <br/>
 - [Understanding the .panrc configuration file](https://github.com/PaloAltoNetworks/safe-networking/wiki/Default-.panrc-configuration-file)<br/>
 - [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking)<br/>
 - [Running SafeNetworking in DEBUG mode](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-in-DEBUG-mode)<br/>
