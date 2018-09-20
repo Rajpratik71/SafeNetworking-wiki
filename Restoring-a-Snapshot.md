@@ -30,7 +30,7 @@ If you do not see the Snapshot you want to restore, verify that you have put the
 ## Restoring Snapshots
 Snapshots are restored (PUT) using the following format:
 ```
-PUT _snapshot/<location>/<snapshot name>/_restore?<options - if needed>
+POST _snapshot/<location>/<snapshot name>/_restore?<options - if needed>
 ```
 
 ```location``` was defined in the [Set up Elasticsearch for Snapshot/Restore](https://github.com/PaloAltoNetworks/safe-networking/wiki/Snapshot-Restore-Setup) section, thus ours is "sfn"<br/>
