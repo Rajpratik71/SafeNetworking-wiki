@@ -62,7 +62,7 @@ sudo apt-get update && sudo apt-get install default-jdk
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=6.2.4 kibana=6.2.4 logstash=1:6.2.4-1
+sudo apt-get update && sudo apt-get install elasticsearch=6.4.0 kibana=6.4.0 logstash=1:6.4.0-1
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
