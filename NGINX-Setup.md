@@ -40,7 +40,7 @@ server {
 sudo service nginx restart
 ```
 
-##### Kibana should now be accessible via your FQDN or the public IP address of your ELK Server i.e. http://elk-server-public-ip/. If you go there in a web browser, after entering the "sfn" credentials, you should see a Kibana welcome page.
+##### If you have run the setup.sh installer, Kibana should now be accessible via your FQDN or the public IP address of your ELK Server i.e. http://elk-server-public-ip/. If you go there in a web browser, after entering the "sfn" credentials, you should see a Kibana welcome page.
 
 
 #### You are now done with the infrastructure setup. Head back, from whence you came, and read the rest of the [README](https://github.com/PaloAltoNetworks/safe-networking) to finish the install.  
