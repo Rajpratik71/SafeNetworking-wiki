@@ -40,28 +40,28 @@ sudo apt-get update && sudo apt-get -y install build-essential checkinstall
 sudo apt-get -y install python-dev python-setuptools python-pip python-smbus libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev 
 ```
 
-## JAVA 8
-The ElasticStack depends on Java to run, so we need to make sure that we have the Java 8 JDK installed before we install the stack.
+## JAVA 10
+The ElasticStack depends on Java to run, so we need to make sure that we have the Java 10 JDK installed before we install the stack.
 ```
 java -version
 ```
-On systems with Java 8 installed, this command produces output similar to the following:
+On systems with Java 10 installed, this command produces output similar to the following:
 ```java
-java version "1.8.0_65"
-Java(TM) SE Runtime Environment (build 1.8.0_65-b17)
-Java HotSpot(TM) 64-Bit Server VM (build 25.65-b01, mixed mode)
+openjdk version "10.0.2" 2018-07-17
+OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2)
+OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2, mixed mode)
 ```
-***If*** Java needs to be installed or upgraded to Java 8 (Java 9 is NOT supported)
+***If*** Java needs to be installed or upgraded to Java 10 (Java 9 is NOT supported)
 ```
 sudo apt-get update && sudo apt-get install default-jdk
 ```
-*Rerun the java -version command to verify you now have Java 8 installed*
+*Rerun the java -version command to verify you now have Java 10 installed*
 </br>
 </br>
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=6.4.0 kibana=6.4.0 logstash=1:6.4.0-1
+sudo apt-get update && sudo apt-get install elasticsearch=6.4.1 kibana=6.4.1 logstash=1:6.4.1-1
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
