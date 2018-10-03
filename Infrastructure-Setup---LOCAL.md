@@ -1,12 +1,13 @@
 #### Use the following instructions to download, install, configure and deploy the required versions of software for SafeNetworking
 <br/>
 
+## NOTE:  As of SFN3.4, these instructions are intended for Ubuntu 18.04.x LTS.  These differ from the 16.04 instructions and YMMV
+
 # SOFTWARE REQUIREMENTS
-**ElasticStack 6.2.4**  <br/>
+**ElasticStack 6.4.x**  <br/>
 **Nginx 1.10** - minimum<br/>
 **Python 3.6 or greater** - don't even *attempt* anything else<br/>
-**Ubuntu 16.04 (Desktop or Server)** - no, it won't run on 14.04<br/>
-##### NOTE: while it **will** run on Ubuntu 16.04 minimal - it takes a lot of work (*by you*) to get it running - avoid if at all possible
+**Ubuntu 18.04 (Desktop or Server)** - no, it won't run on 14.04<br/>
 <br/>
 
 # SYSTEM SETUP 
@@ -14,7 +15,7 @@
 
 #### Install supporting tools and pkgs for Ubuntu
 ```
-sudo apt-get update && sudo apt-get install software-properties-common python-software-properties
+sudo apt-get update && sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get install apt-transport-https sysv-rc-conf curl git
 ```
@@ -31,14 +32,11 @@ echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee 
 </br>
 
 
-## Python 3.6
-SafeNetworking requires Python 3.6 to run properly. <br/>
-NOTE: Most of these should already be installed.  This ensures it.  
+## Python 3.6 Libraries
+SafeNetworking requires Python 3.6 to run properly. The interpreter is on Ubuntu 18.04.x but some of these supporting libraries may not be.<br/>
 ```
-sudo add-apt-repository ppa:jonathonf/python-3.6
 sudo apt-get update && sudo apt-get -y install build-essential checkinstall 
 sudo apt-get -y install python-dev python-setuptools python-pip python-smbus libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev 
-sudo apt-get -y install python3.6
 ```
 
 ## JAVA 8
