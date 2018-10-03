@@ -1,4 +1,11 @@
-By default, SafeNetworking runs as a system service and logs directly to the safe-networking-sp/log/sfn.log file.  There may be times where SafeNetworking needs to be debugged and the console output provides more information than in the sfn.log file.  
+#### If have already done the below and are in the tmux session - the command to run is:
+```
+python ./sfn > log/console-$(date +%Y-%m-%d_%H:%M).log 2>&1 &
+```
+You're welcome
+
+If you aren't set up in tmux, then read on and follow the instructions below.
+#   
 This document covers the ability to run SafeNetworking in DEBUG mode **and** to capture the console logging in a file that can be used to debug the workflow(s).  You may have to have this run for a long period of time and it is suggested that you run it in a tmux session so that you may log out and back in and not have to worry about the SafeNetworking processes dying because your shell is gone.  
 
 First, edit your .panrc file and make sure that the appropriate DEBUG settings are turned on under the Logging section:
