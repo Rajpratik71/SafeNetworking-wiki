@@ -11,7 +11,7 @@ Use the below, outlined pages to find what you are looking for and let us know i
       <br/>
 - [Understanding the .panrc configuration file](https://github.com/PaloAltoNetworks/safe-networking/wiki/Default-.panrc-configuration-file)<br/>
 - [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-in-DEBUG-mode)<br/>
-- [Running SafeNetworking as a service (DEPRECATED)](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking)<br/>
+- [Running SafeNetworking as a service (DEPRECATED)](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-as-a-Service-(DEPRECATED))<br/>
 
 ## &nbsp;&nbsp;Administration
 #### &nbsp;&nbsp;&nbsp; Backup/Restore
