@@ -1,3 +1,7 @@
+#### This will work if you uncomment the lines in install/setup.sh that refer to creating and installing the service and then run setup.  The below still works, but is not great for troubleshooting.   It is suggested to use the startup commands @ <here>  to run SFN.
+
+#     
+
 SafeNetworking runs as a system service in Ubuntu.  You have the same commands for SafeNetworking as you would for any other service - i.e. systemctl and service. 
 
 To view if SafeNetworking is running:
