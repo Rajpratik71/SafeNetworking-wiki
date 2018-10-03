@@ -1,5 +1,3 @@
-As of 2.0, SafeNetworking has moved to the ElasticStack architecture with new, modular processors acting on events written to the ElasticSearch database.  
-
 Use the below, outlined pages to find what you are looking for and let us know if you have questions via the issues tab. 
 
 # SafeNetworking
