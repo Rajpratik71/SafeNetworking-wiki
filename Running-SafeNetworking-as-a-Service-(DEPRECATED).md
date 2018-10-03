@@ -1,4 +1,4 @@
-#### This will work if you uncomment the lines in install/setup.sh that refer to creating and installing the service and then run setup.  The below still works, but is not great for troubleshooting.   It is suggested to use the startup commands @ <here>  to run SFN.
+#### This will work if you uncomment the lines in install/setup.sh that refer to creating and installing the service and then run setup.  The below still works, but is not great for troubleshooting.   It is suggested to use the startup commands @ [here](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-in-DEBUG-mode) to run SFN.
 
 #     
 
