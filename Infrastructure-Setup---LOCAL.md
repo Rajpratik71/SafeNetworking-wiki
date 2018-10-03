@@ -16,9 +16,7 @@
 
 #### Install supporting tools and pkgs for Ubuntu
 ```
-sudo apt-get update && sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get install apt-transport-https sysv-rc-conf curl git
+sudo apt-get update && sudo apt-get install software-properties-common curl
 ```
 
 #### Get the release key for the ElasticStack software
@@ -36,8 +34,7 @@ echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee 
 ## Python 3.6 Libraries
 SafeNetworking requires Python 3.6 to run properly. The interpreter is on Ubuntu 18.04.x but some of these supporting libraries may not be.<br/>
 ```
-sudo apt-get update && sudo apt-get -y install build-essential checkinstall 
-sudo apt-get -y install python-dev python-setuptools python-pip python-smbus libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev 
+sudo apt-get update && sudo apt-get -y install build-essential python-dev python-setuptools libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev libssl-dev openssl libffi-dev 
 ```
 
 ## JAVA 10
