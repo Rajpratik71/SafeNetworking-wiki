@@ -38,22 +38,24 @@ SafeNetworking requires Python 3.6 to run properly. The interpreter is on Ubuntu
 sudo apt-get update && sudo apt-get -y install build-essential python-dev python-setuptools libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev libssl-dev openssl libffi-dev python3-pip  python3.6-venv
 ```
 
-## JAVA 10
-The ElasticStack depends on Java to run, so we need to make sure that we have the Java 10 JDK installed before we install the stack.
+## JAVA 8
+The ElasticStack depends on Java to run, so we need to make sure that we have the Java 8 JDK installed before we install the stack.  
 ```
 java -version
 ```
-On systems with Java 10 installed, this command produces output similar to the following:
+On systems with Java 8 installed, this command produces output similar to the following:
 ```java
-openjdk version "10.0.2" 2018-07-17
-OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2)
-OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2, mixed mode)
+openjdk version "1.8.0_162"
+OpenJDK Runtime Environment (build 1.8.0_162-8u162-b12-1-b12)
+OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)
 ```
-***If*** Java needs to be installed or upgraded to Java 10 (Java 9 is NOT supported)
+***If*** Java needs to be installed or upgraded to Java 8 (Java 9 is NOT supported and 10 breaks logstash)
 ```
-sudo apt-get update && sudo apt-get install default-jdk
+sudo apt-get update
+sudo apt-get install openjdk-8-jre-headless -y
+sudo apt-get install openjdk-8-jdk-headless -y
 ```
-*Rerun the java -version command to verify you now have Java 10 installed*
+*Rerun the java -version command to verify you now have Java 8 installed*
 </br>
 </br>
 
