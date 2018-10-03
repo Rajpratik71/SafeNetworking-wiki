@@ -6,6 +6,7 @@
 # SOFTWARE REQUIREMENTS
 **ElasticStack 6.4.x**  <br/>
 **Nginx 1.10** - minimum<br/>
+**Java 10**<br/>
 **Python 3.6 or greater** - don't even *attempt* anything else<br/>
 **Ubuntu 18.04 (Desktop or Server)** - no, it won't run on 14.04<br/>
 <br/>
