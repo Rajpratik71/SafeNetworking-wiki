@@ -1,10 +1,9 @@
 #### If have already done the below and are in the tmux session - the command to run is:
 ```
-python ./sfn > log/console-$(date +%Y-%m-%d_%H:%M).log 2>&1 &
+./sfn > log/console-$(date +%Y-%m-%d_%H:%M).log 2>&1 &
 ```
-You're welcome
-
 If you aren't set up in tmux, then read on and follow the instructions below.
+
 #   
 This document covers the ability to run SafeNetworking in DEBUG mode **and** to capture the console logging in a file that can be used to debug the workflow(s).  You may have to have this run for a long period of time and it is suggested that you run it in a tmux session so that you may log out and back in and not have to worry about the SafeNetworking processes dying because your shell is gone.  
 
@@ -36,7 +35,7 @@ Once you have tmux installed, you can now use it to run SafeNetworking and keep 
 tmux new-session -s sfn
 cd safe-networking
 source env/bin/activate
-python ./sfn > log/console-$(date +%Y-%m-%d_%H:%M).log 2>&1 &
+./sfn > log/console-$(date +%Y-%m-%d_%H:%M).log 2>&1 &
 ```
 This will run SafeNetworking in the background (ampersand "&" at the end of the python line) and the entire session will be in it's own shell that will remain running until either the system is shutdown or the tmux session is killed externally.
 
