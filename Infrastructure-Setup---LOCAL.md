@@ -75,110 +75,59 @@ sudo apt-mark hold logstash
 </br>
 
 
+## Install NGINX
+#### Because we configured Kibana to listen on localhost, we can set up a reverse proxy to allow external access to it on port 80. We will use Nginx for this purpose.
 
-# ELASTICSEARCH CONFIGURATION AND STARTUP
+##### Install Nginx and Apache2-utils:
+```
+sudo apt-get install nginx apache2-utils
+```
+##### Use htpasswd to create an admin user, called "sfn" (or whatever you want), that can access the Kibana web interface:
+```
+sudo htpasswd -c /etc/nginx/htpasswd.users sfn
+```
+##### Enter a password at the prompt. Remember this login, as you will need it to access the Kibana web interface.
 
-#### Edit the network.host setting (it is commented out) in the elasticsearch config file (as root)
+##### Edit the nginx server block file 
 ```
-sudo vi /etc/elasticsearch/elasticsearch.yml 
-```
-
-```network.host: 0.0.0.0```
-</br>
-
-#### Configure Elasticsearch to start with the system
-```
-sudo /bin/systemctl daemon-reload
-sudo /bin/systemctl enable elasticsearch.service
-```
-
-#### Start Elasticsearch
-```
-sudo /bin/systemctl start elasticsearch.service
+sudo vi /etc/nginx/sites-available/default   
 ```
 
-#### Verify Elasticsearch is running by issuing this at the command prompt
+##### Delete the file's contents, and paste the following code block into the file. Be sure to update the server_name to match your server's name and use whatever port you want it to listen it on:
 ```
-curl 127.0.0.1:9200
+server {
+        listen 80;
+
+        server_name sfn.com;
+
+        auth_basic "Restricted Access";
+        auth_basic_user_file /etc/nginx/htpasswd.users;
+
+        location / {
+            proxy_pass http://localhost:5601;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;        
+        }
+    }
 ```
-#### You should get JSON similar to the following:
-```json
-{
- "name" : "79dHjEG",
- "cluster_name" : "elasticsearch",
- "cluster_uuid" : "S09jzgZgTOa3ZO-xJVXFbA",
- "version" : {
-   "number" : "6.2.2",
-   "build_hash" : "10b1edd",
-   "build_date" : "2018-02-16T19:01:30.685723Z",
-   "build_snapshot" : false,
-   "lucene_version" : "7.2.1",
-   "minimum_wire_compatibility_version" : "5.6.0",
-   "minimum_index_compatibility_version" : "5.0.0"
- },
- "tagline" : "You Know, for Search"
-}
+##### Now restart Nginx so it listens on the port:
 ```
-*If you see JSON similar to the above, Elasticsearch is now up and running*
-
-
-
-
-# KIBANA CONFIGURATION AND STARTUP
-#### Edit the elasticsearch.url setting (it is commented out) in the kibana config file (as root)
-```
-sudo vi /etc/kibana/kibana.yml 
-```
-```elasticsearch.url:"http://localhost:9200"```
-
-</br>
-
-#### Configure Kibana to start with the system
-```
-sudo /bin/systemctl daemon-reload
-sudo /bin/systemctl enable kibana.service
+sudo service nginx restart
 ```
 
-#### Start Kibana
+##  Run SETUP
+####  The setup utility uses the pan user and pan group as the owner on the Ubuntu server as that is how we build servers internally.  If you do not wish to use the pan:pan setting, on the first uncommented line in setup.sh, you will need to change the two instances of pan to your user and group for this to work properly.
 ```
-sudo /bin/systemctl start kibana.service
-```
-
-##### NOTE: The above commands provide no feedback as to whether Kibana was started successfully or not. Instead, this information will be written in the log files located in /var/log/kibana
-
-#### Check to make sure Kibana is running by opening this link on the server: http://localhost:5601
-
-*If you see the Kibana UI, Kibana is now up and running*
-</br>
-</br>
-
-
-# LOGSTASH CONFIGURATION AND STARTUP
-#### Edit the LS_USER setting (it is logstash by default) in the logstash startup.options file 
-```
-sudo vi /etc/logstash/startup.options
-```
-```LS_USER=root```
-
-#### Create a symbolic link for the configuration for logstash (becasue, apparently, it is stupid)
-```
-sudo ln -s /etc/logstash /usr/share/logstash/config
-```
-</br>
-
-
-#### Configure Logstash to start with the system
-```
-sudo /bin/systemctl daemon-reload
-sudo /bin/systemctl enable logstash.service
+cd install
+<edit setup.sh if you wish to change the user and group>
+sudo ./setup.sh
 ```
 
-#### Start Logstash
-```
-sudo /bin/systemctl start logstash.service
-```
+##### After you have run the setup.sh installer (with no errors), Kibana should now be accessible via your FQDN or the public IP address of your ELK Server i.e. http://elk-server-public-ip/. If you go there in a web browser, after entering the "sfn" credentials, you should see a Kibana welcome page.
 
 
-#### You are now done with the infrastructure setup*.  The rest of the SafeNetworking setup depends on cloning this repository.  Head back, from whence you came, and read the rest of the [README](https://github.com/PaloAltoNetworks/safe-networking) to finish the install.  
+#### You are now done with the infrastructure setup. Head back, from whence you came, and read the rest of the [README](https://github.com/PaloAltoNetworks/safe-networking) to finish the install.  
 
-\*If you need access to SafeNetworking on port 80, see [NGINX SETUP](https://github.com/PaloAltoNetworks/safe-networking/wiki/NGINX-Setup) to allow for external connections to SafeNetworking.
