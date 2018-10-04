@@ -14,6 +14,10 @@
 # SYSTEM SETUP 
 </br>
 
+#### Create host mapping for elasticsearch in /etc/hosts
+Add the following line to you /etc/hosts file using the editor of your choice: <br/>
+```127.0.0.1  elasticsearch```
+
 #### Install supporting tools and pkgs for Ubuntu
 ```
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
