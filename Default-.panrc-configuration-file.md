@@ -2,16 +2,12 @@
 
 The .panrc configuration file allows the administrator to make changes to certain system settings that will affect how the SafeNetworking software performs, interacts with the infrastructure and for debugging problems that may arise with the system. 
 
-The .panrc file is the ***only*** file that should be changed within the SafeNetworking system without help from the SP-Solutions or the Account Team.  The file is self documenting with comments for each setting available.  Below is a file that you can cut and paste and use as your own .panrc file.  Leave anything you do not want changed commented out except for the AUTOFOCUS\_API_KEY setting, that must be filled in for SafeNetworking to run and process the events.
+The .panrc file is the ***only*** file that should be changed within the SafeNetworking system without help from the SP-Solutions or the Account Team.  The file is self documenting with comments for each setting available.  Below is a file that you can cut and paste and use as your own .panrc file.  It is a copy of the same file in the install/sfn directory from the repository.  You can also just copy that over to your home directory if you wish.  Leave anything you do not want changed commented out except for the AUTOFOCUS\_API_KEY setting, that must be filled in for SafeNetworking to run and process the events.
 
-Each setting, as you see it, is the system default.
+Each setting, as you see it, is the system default.  
 
 ### The .panrc file should be stored in the home directory of the user that runs SafeNetworking.
-### NOTE: A symbolic link to the file is created ***before*** running SafeNetworking:
-```
-cd ~/safe-networking/project
-ln -s ~/.panrc
-```
+
 
 ```python
 ################################################################################
