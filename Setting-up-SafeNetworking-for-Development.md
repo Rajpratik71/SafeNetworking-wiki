@@ -7,7 +7,7 @@
 
 4.) [NGFW Configuration](https://github.com/PaloAltoNetworks/safe-networking/wiki/Home#config-ngfw)
 
-5.) [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking)
+5.) [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-in-DEBUG-mode)
 
 <br/>
 
