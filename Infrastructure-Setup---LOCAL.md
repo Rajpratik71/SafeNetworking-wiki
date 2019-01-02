@@ -65,7 +65,7 @@ sudo apt-get install openjdk-8-jdk-headless -y
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=6.5.1 kibana=6.5.1 logstash=1:6.5.1-1
+sudo apt-get update && sudo apt-get install elasticsearch=6.5.4 kibana=6.5.4 logstash=1:6.5.4-1
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
