@@ -21,7 +21,7 @@ Add the following line to you /etc/hosts file using the editor of your choice: <
 #### Install supporting tools and pkgs for Ubuntu
 ```
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
-sudo apt-get update && sudo apt-get install software-properties-common curl 
+sudo apt-get update && sudo apt-get install -y software-properties-common curl 
 ```
 
 #### Get the release key for the ElasticStack software
