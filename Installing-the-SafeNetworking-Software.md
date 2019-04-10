@@ -6,10 +6,10 @@
 ```cd safe-networking```
 <br/><br/>
 ### 3. Create python 3.6 virtualenv
-```python3.6 -m venv env```
+```python3.6 -m venv .env```
 <br/><br/>
 ### 4. Activate virtualenv
-```source env/bin/activate```
+```source .env/bin/activate```
 <br/><br/>
 ### 5. Download required libraries
 ```pip install -r requirements.txt```
