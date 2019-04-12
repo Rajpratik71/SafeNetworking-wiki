@@ -4,7 +4,7 @@
 ## NOTE:  As of SFN3.4, these instructions are intended for Ubuntu 18.04.x LTS.  These differ from the 16.04 instructions and YMMV
 
 # SOFTWARE REQUIREMENTS
-**ElasticStack 6.6.x**  <br/>
+**ElasticStack 7.0.x**  <br/>
 **Nginx 1.10** - minimum<br/>
 **Java 8**<br/>
 **Python 3.6 or greater** - don't even *attempt* anything else<br/>
@@ -31,7 +31,7 @@ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch |sudo apt-key add 
 
 #### Create the ElasticStack repository listing for apt-get
 ```
-echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
+echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 ```
 </br>
 
@@ -65,7 +65,7 @@ sudo apt-get install openjdk-8-jdk-headless -y
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=6.6.0 kibana=6.6.0 logstash=1:6.6.0-1
+sudo apt-get update && sudo apt-get install elasticsearch=7.0.0 kibana=7.0.0 logstash=1:7.0.0-1
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
