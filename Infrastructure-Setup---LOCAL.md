@@ -4,7 +4,7 @@
 ## NOTE:  As of SFN3.4, these instructions are intended for Ubuntu 18.04.x LTS.  These differ from the 16.04 instructions and YMMV
 
 # SOFTWARE REQUIREMENTS
-**ElasticStack 7.0.x**  <br/>
+**ElasticStack 6.7.x**  <br/>
 **Nginx 1.10** - minimum<br/>
 **Java 8**<br/>
 **Python 3.6 or greater** - don't even *attempt* anything else<br/>
@@ -65,7 +65,7 @@ sudo apt-get install openjdk-8-jdk-headless -y
 
 ## Install Elasticsearch, Logstash & Kibana
 ```
-sudo apt-get update && sudo apt-get install elasticsearch=7.0.0 kibana=7.0.0 logstash=1:7.0.0-1
+sudo apt-get update && sudo apt-get install elasticsearch=6.7.0 kibana=6.7.0 logstash=1:6.7.0-1
 ```
 
 ## Set apt to hold the versions so it doesn't inadvertently update
