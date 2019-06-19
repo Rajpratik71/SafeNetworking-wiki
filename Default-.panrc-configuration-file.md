@@ -30,6 +30,11 @@ Each setting, as you see it, is the system default.
 # URL_POOL_TIME = 10
 # AF_POOL_TIME = 600
 
+# Turn on/off modules.  By default DNS is the only thing running. 
+# DNS_PROCESSING = True
+# IOT_PROCESSING = False
+# URL_PROCESSING = False
+
 # Number of AF points left to slow down processing so we don't run out of points
 # When it reaches this point, it slows execution to 1 event at a time.
 # AF_POINTS_LOW = 5000
@@ -100,14 +105,14 @@ Each setting, as you see it, is the system default.
 ################################################################################
 # Set debug level for Flask - if 'DEBUG = True' all debug messages will appear
 # on console where SafeNetworking application was started
-# DEBUG = False
+# DEBUG = True
 #
 # Set the logging level for the SafeNetworking application.  All messages will
 # be sent to log/sfn.log
-# LOG_LEVEL = "INFO"
+# LOG_LEVEL = "DEBUG"
 #
 # Size of Log file before rotating - in bytes
-# LOG_SIZE = 10000000
+# LOG_SIZE = 100000000
 #
 # Number of log files to keep in log rotation
 # LOG_BACKUPS = 10
@@ -137,7 +142,6 @@ Each setting, as you see it, is the system default.
 # the external systems
 # AUTOFOCUS_API_KEY = ""
 #
-
 ```
 
 
