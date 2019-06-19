@@ -16,6 +16,8 @@ Use the below, outlined pages to find what you are looking for and let us know i
 - [Restoring a Snapshot](https://github.com/PaloAltoNetworks/safe-networking/wiki/Restoring-a-Snapshot)
 #### &nbsp;&nbsp;&nbsp; Configuration
 - [Changing the AutoFocus API Key](https://github.com/PaloAltoNetworks/safe-networking/wiki/Changing-the-Autofocus-API-Key)
+#### &nbsp;&nbsp;&nbsp; Troubleshooting
+- [Testing Logstash Ports](https://github.com/PaloAltoNetworks/safe-networking/wiki/Testing-Logstash-Ports)
 #### &nbsp;&nbsp;&nbsp; Miscellaneous
 - [Search examples for SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/SafeNetworking-Search-Examples)
 ## &nbsp;&nbsp;Community
