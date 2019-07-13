@@ -1,21 +1,19 @@
 Use the below, outlined pages to find what you are looking for and let us know if you have questions via the issues tab. 
 
 # SafeNetworking
-[What is SafeNetworking?](https://github.com/PaloAltoNetworks/safe-networking/wiki/What-is-SafeNetworking%3F)
+[What is SafeNetworking?](https://github.com/PaloAltoNetworks/SafeNetworking/wiki/What-is-SafeNetworking%3F)<br/>
 
-## &nbsp;&nbsp;Installation, configuration and execution
-- [Setting up SafeNetworking for Development](https://github.com/PaloAltoNetworks/safe-networking/wiki/Setting-up-SafeNetworking-for-Development)
-- [Understanding the .panrc configuration file](https://github.com/PaloAltoNetworks/safe-networking/wiki/Default-.panrc-configuration-file)<br/>
-- [Running SafeNetworking](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-in-DEBUG-mode)<br/>
-- [Running SafeNetworking as a service (DEPRECATED)](https://github.com/PaloAltoNetworks/safe-networking/wiki/Running-SafeNetworking-as-a-Service-(DEPRECATED))<br/>
+[Running SafeNetworking](https://github.com/PaloAltoNetworks/SafeNetworking/wiki/Running-SafeNetworking-in-DEBUG-mode)<br/>
 
 ## &nbsp;&nbsp;Administration
+#### &nbsp;&nbsp;&nbsp; Configuration
+- [Understanding the .panrc configuration file](https://github.com/PaloAltoNetworks/SafeNetworking/wiki/Default-.panrc-configuration-file)<br/>
+- [Changing the AutoFocus API Key](https://github.com/PaloAltoNetworks/safe-networking/wiki/Changing-the-Autofocus-API-Key)
 #### &nbsp;&nbsp;&nbsp; Backup/Restore
 - [Setup for Snapshot/Restore](https://github.com/PaloAltoNetworks/safe-networking/wiki/Snapshot-Restore-Setup) - complete this first!
 - [Creating a Snapshot](https://github.com/PaloAltoNetworks/safe-networking/wiki/Creating-a-Snapshot)
 - [Restoring a Snapshot](https://github.com/PaloAltoNetworks/safe-networking/wiki/Restoring-a-Snapshot)
-#### &nbsp;&nbsp;&nbsp; Configuration
-- [Changing the AutoFocus API Key](https://github.com/PaloAltoNetworks/safe-networking/wiki/Changing-the-Autofocus-API-Key)
+
 #### &nbsp;&nbsp;&nbsp; Troubleshooting
 - [Testing Logstash Ports](https://github.com/PaloAltoNetworks/safe-networking/wiki/Testing-Logstash-Ports)
 #### &nbsp;&nbsp;&nbsp; Miscellaneous
@@ -37,3 +35,7 @@ Use the below, outlined pages to find what you are looking for and let us know i
 ## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kibana
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- [Kibana Post Install Setup](https://github.com/PaloAltoNetworks/safe-networking/wiki/Kibana-post-install-setup)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- [Customizing the Portal](https://github.com/PaloAltoNetworks/safe-networking/wiki/Customizing-the-Portal)
+
+# &nbsp;&nbsp;DEPRECATED (meaning not supported)
+- [Setting up SafeNetworking for Development (DEPRECATED)](https://github.com/PaloAltoNetworks/SafeNetworking/wiki/Setting-up-SafeNetworking-for-Development)
+- [Running SafeNetworking as a service (DEPRECATED)](https://github.com/PaloAltoNetworks/SafeNetworking/wiki/Running-SafeNetworking-as-a-Service-(DEPRECATED))<br/>
