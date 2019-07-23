@@ -55,9 +55,7 @@ OpenJDK 64-Bit Server VM (build 25.162-b12, mixed mode)
 ```
 ***If*** Java needs to be installed or upgraded to Java 8 (Java 9 is NOT supported and 10 breaks logstash)
 ```
-sudo apt-get update
-sudo apt-get install openjdk-8-jre-headless -y
-sudo apt-get install openjdk-8-jdk-headless -y
+sudo apt-get update && sudo apt-get install openjdk-8-jre-headless -y && sudo apt-get install openjdk-8-jdk-headless -y
 ```
 *Rerun the java -version command to verify you now have Java 8 installed*
 </br>
